@@ -1,0 +1,270 @@
+body {
+    @apply flex flex-col items-center bg-[#e5e9e7];
+}
+
+.header {
+    @apply flex items-center gap-[250px] h-[100px] pb-[10px] pt-[10px] pl-[30px] pr-[30px] border-b border-[#d4dbd7];
+}
+
+.head-logo {
+    @apply flex gap-[10px];
+}
+
+.head-text {
+    @apply text-[#163A34] text-[20px];
+}
+
+.groupLogo {
+    @apply w-[30px] h-[30px];
+}
+
+.header-menu {
+    @apply w-[450px] flex flex-row gap-[80px]
+}
+
+.header-menu a {
+    @apply bg-transparent text-[#163A34] border-transparent outline-none inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-menu a:hover {
+    @apply text-[18px];
+    text-decoration: underline #FE9F6B;
+    text-underline-offset: 6px;
+    transform: scale(1.2);
+}
+
+.browse-recipes {
+    @apply text-[#fff] bg-[#163A34] border-none pt-[10px] pb-[10px] pr-[20px] pl-[20px] rounded-[10px];
+}
+
+.mobMenu {
+    display: none;
+}
+
+.content {
+    @apply flex flex-col items-center content-center gap-[40px] border-b border-[#E0E6E3] bg-[#e5e9e7] pb-[20px];
+}
+
+
+.heroTitle {
+    @apply font-[70px] relative text-[#163A34];
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.colorBox {
+    @apply absolute w-[230px] h-[35px] bg-[#FE9F6B] rounded-[5px] border-none;
+    opacity: 0.3;
+    top: 150px;
+    left: 417px;
+}
+
+
+.exploring {
+    @apply text-[#fff] pt-[10px] pb-[10px] pr-[30px] pl-[30px] bg-[#163A34] rounded-[10px];
+}
+
+.mainContent {
+    @apply w-[85%] h-[550px];
+}
+
+.heroSubtitle {
+    @apply flex flex-col items-center text-[#395852];
+}
+
+.features {
+    @apply text-[55px] text-[#395852];
+    font-weight: bold;
+}
+
+.icon-text {
+    @apply flex gap-[250px] pt-[30px] pr-[130px];
+}
+
+.carrotIcon,
+.featureIcon,
+.searchIcon {
+    @apply w-[50px] pb-[25px];
+}
+
+.carrot,
+.feature,
+.search {
+    @apply flex flex-col w-[170px];
+}
+
+.icon-header {
+    @apply text-[#163A34] text-[30px] w-[300px] pb-[20px];
+    font-weight: bold;
+}
+
+.carrot-text,
+.feature-text,
+.search-text {
+    @apply text-[#395852] w-[20em] text-[18px];
+}
+
+.real {
+    @apply flex pt-[120px] gap-[30px] border-t border-[#d4dbd7];
+}
+
+.real-text {
+    @apply pt-[20px];
+}
+
+.real-text2 {
+    @apply flex flex-col text-[#395852] pb-[20px] w-[30em] relative;
+}
+
+.colorBox2 {
+    @apply absolute w-[85px] h-[6px] bg-[#FE9F6B] border-none;
+    opacity: 0.3;
+    top: 37px;
+    left: 42px;
+}
+
+.real-text3 {
+    @apply pt-[40px] w-[25em];
+}
+
+.real-header {
+    @apply text-[#163A34] pb-[30px] text-[55px];
+    font-weight: bold;
+}
+
+.real-img {
+    @apply w-[660px] h-[450px];
+}
+
+.cook1 {
+    @apply bg-[#c9cdcc] w-[1170px] h-[370px] flex justify-between rounded-[15px];
+}
+
+.cook-text {
+    @apply flex flex-col justify-center items-center pt-[10px] gap-[10px];
+}
+
+.cook {
+    @apply text-[#163A34] text-[45px];
+    font-weight: bold;
+}
+
+.cook2 {
+    @apply text-[#395852] text-[15px] pb-[30px];
+}
+
+.cook1 img {
+    @apply w-[20em] h-[15em] pt-[3em];
+}
+
+footer {
+    @apply flex flex-col justify-center items-center pt-[200px];
+}
+
+.social {
+    @apply flex justify-start py-[50px] pb-[30px] gap-[810px];
+}
+
+.social-text {
+    @apply text-[#163A34] text-[25px];
+}
+
+.socialIcons {
+    @apply flex gap-[5px];
+}
+
+.socialIcons img {
+    @apply w-[25px] h-[25px];
+}
+
+@media (max-width: 768px) {
+
+
+    /* Header küçülür və spacing daha realist olur */
+    .header {
+        @apply flex items-center gap-[50px] h-[80px] pb-[10px] 
+        pt-[10px] pl-[10px] pr-[10px]  border-b border-[#d4dbd7] w-[1000px];
+        border: 1px solid red ;
+        
+
+
+      /*  @apply flex items-center gap-[250px] h-[100px] pb-[10px] 
+        pt-[10px] pl-[30px] pr-[30px] border-b border-[#d4dbd7];*/
+    }
+
+    /* Desktop menu tam gizlənir */
+    .header-menu,
+    .browse-recipes {
+        display: none;
+   
+    }
+
+    .head-logo {
+    @apply flex gap-[5px] w-[300px] pl-[50px];
+}
+
+.head-text {
+    @apply text-[#163A34] text-[15px];
+}
+
+.groupLogo {
+    @apply w-[100px] h-[100px] pl-[250px] ;
+    color: green;
+    border: 1px solid red;
+}
+    .mobMenu {
+        @apply relative inline-block flex items-center;
+
+    }
+
+    /* Hamburger button */
+    .dropbtn {
+        @apply bg-transparent border-none cursor-pointer p-[2px];
+    }
+
+    /* HTML-dən gələn linklər dropdown-a keçirilir */
+    .dropdown {
+        @apply absolute pt-[10px] bg-transparent w-[150px] z-50;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+            /* left: 2px */
+    }
+
+    .dropdown a {
+        @apply px-[2px] py-[4px] text-[#163A34] flex flex-col items-center rounded-[10px] bg-none;
+        border: 1px solid red;
+    }
+
+    .dropdown a:hover {
+        @apply text-[15px];
+        text-decoration: underline #FE9F6B;
+        text-underline-offset: 6px;
+        transform: scale(1.2);
+    }
+
+    /* Açılan halda görünür */
+    .dropdown.show {
+        @apply flex;
+    }
+
+    .content{
+        /* @apply justify-start; */
+        display: flex;
+        align-items: flex-start;
+    }
+
+
+
+}
+
+/*.header-menu a:hover,
+    .mobMenu a:hover {
+        @apply text-[18px];
+        text-decoration: underline #FE9F6B;
+        text-underline-offset: 6px;
+        transform: scale(1.2);
+    }*/
