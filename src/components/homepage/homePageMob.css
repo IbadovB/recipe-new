@@ -1,0 +1,195 @@
+@media (max-width: 375px) {
+
+    .header {
+        @apply flex gap-[20px] h-[80px] pb-[10px] pt-[10px] border-b border-[#d4dbd7] pl-[50px];
+     }
+
+    .header-menu,
+    .browse-recipes,
+    .heroSubtitle {
+        display: none;
+    }
+
+    .mobBrowse {
+        @apply bg-[#163A34] text-[#fff] text-[12px] p-[5px] rounded-[5px] w-full;
+    }
+
+    .head-logo {
+        @apply flex items-center gap-[5px];
+    }
+
+    .head-text {
+        @apply text-[#163A34] text-[15px];
+    }
+
+    .groupLogo {
+        @apply w-[15px] h-[15px];
+        color: green;
+    }
+
+    .mobMenu {
+        display: block;
+        @apply relative inline-block flex items-center;
+    }
+
+    .mobMenu ul {
+        @apply flex justify-start pr-[5px] bg-transparent;
+        flex-direction: column
+    }
+
+    .dropbtn {
+        @apply flex items-center bg-transparent border-none cursor-pointer pt-[5px] w-[20px];
+    }
+
+    .dropdown {
+        @apply flex flex-col items-center absolute pt-[10px] bg-transparent w-full max-w-[100vw] left-[0] z-50;
+        top: 100%;
+        /* align-items: flex-start; */
+    }
+
+
+
+    .dropdown a {
+        @apply px-[2px] py-[4px] text-[#163A34] text-[12px] flex flex-col bg-[#fff] w-[100px];
+
+    }
+
+    .dropdown a:hover {
+        @apply text-[15px];
+        text-decoration: underline #FE9F6B;
+        text-underline-offset: 6px;
+        transform: scale(1.2);
+    }
+
+    .dropdown.show {
+        @apply flex;
+    }
+
+    .content {
+        @apply flex pl-[50px];
+        align-items: flex-start;
+    }
+
+    .heroTitle {
+        @apply relative text-[#163A34] text-[30px] w-[250px] h-[100px];
+        font-weight: bold;
+    }
+
+    .colorBox {
+        @apply absolute w-[10px] h-[35px] bg-[#FE9F6B] rounded-[5px] border-none;
+        opacity: 0.3;
+        top: 150px;
+        left: 417px;
+    }
+
+
+    .exploring {
+        @apply text-[#fff] text-[15px] pt-[10px] pb-[10px] pr-[15px] pl-[15px] bg-[#163A34] rounded-[10px];
+    }
+
+    .heroSubtitle {
+        display: none;
+    }
+
+    .heroSubtitle2 {
+        @apply flex flex-col items-start text-[#395852] text-[12px] pb-[20px];
+
+    }
+
+    .mainContent {
+        @apply w-[200px] h-[140px] pt-[20px];
+    }
+
+    .features {
+        @apply text-[25px] text-[#395852] w-[250px] pt-[20px];
+        font-weight: bold;
+    }
+
+    .icon-text {
+        @apply flex flex-col pr-[130px] gap-[50px] pt-[10px];
+    }
+
+    .carrotIcon,
+    .featureIcon,
+    .searchIcon {
+        @apply w-[10px] pb-[15px];
+    }
+
+    .carrot,
+    .feature,
+    .search {
+        @apply flex flex-col;
+    }
+
+    .carrotIcon,
+    .featureIcon,
+    .searchIcon {
+        @apply w-[30px];
+    }
+
+    .icon-header {
+        @apply text-[#163A34] text-[20px] w-[300px] pb-[10px];
+        font-weight: bold;
+    }
+
+    .carrot-text,
+    .feature-text,
+    .search-text {
+        @apply text-[#395852] w-[230px] text-[12px];
+    }
+
+    .real {
+        display: none
+    }
+
+
+    footer {
+        @apply flex flex-col justify-center items-center pt-[200px] w-[100px] h-[100px] pl-[100px];
+    }
+
+    .cook1 {
+        @apply bg-[#c9cdcc] flex justify-between rounded-[5px] w-[200px] pl-[10px] pr-[10px] pb-[20px];
+    }
+
+    .cook-text {
+        @apply flex flex-col justify-center items-center pt-[10px] gap-[10px] w-[300px];
+    }
+
+    .cook {
+        @apply text-[#163A34] text-[20px] w-[150px];
+        font-weight: bold;
+    }
+
+    .cook2 {
+        @apply text-[#395852] text-[12px] pb-[30px];
+    }
+
+    .cook1 img {
+        display: none
+    }
+
+    .browse-recipes2 {
+        @apply text-[#fff] bg-[#163A34] text-[10px] border-none pt-[10px] pb-[10px] pr-[10px] pl-[10px] rounded-[5px];
+    }
+
+    .social {
+        @apply flex flex-col items-center pt-[20px] py-[5px] pb-[50px] gap-[5px];
+    }
+
+    .social-text {
+        display: none;
+    }
+
+    .social-text2 {
+        @apply block text-[#163A34] text-[13px] w-[150px] pt-[10px];
+    }
+
+    .socialIcons {
+        @apply flex gap-[5px];
+    }
+
+    .socialIcons img {
+        @apply w-[15px] h-[15px];
+    }
+
+}

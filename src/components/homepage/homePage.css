@@ -18,11 +18,11 @@ body {
     @apply w-[30px] h-[30px];
 }
 
-.header-menu {
+.header-menu ul {
     @apply w-[450px] flex flex-row gap-[80px]
 }
 
-.header-menu a {
+.header-menu li {
     @apply bg-transparent text-[#163A34] border-transparent outline-none inline-block;
     transition: transform 0.3s ease-in-out;
 }
@@ -34,16 +34,20 @@ body {
     transform: scale(1.2);
 }
 
-.browse-recipes {
+.browse-recipes,
+ .browse-recipes2{
     @apply text-[#fff] bg-[#163A34] border-none pt-[10px] pb-[10px] pr-[20px] pl-[20px] rounded-[10px];
 }
 
-.mobMenu {
+
+
+.mobMenu,
+.heroSubtitle2 {
     display: none;
 }
 
 .content {
-    @apply flex flex-col items-center content-center gap-[40px] border-b border-[#E0E6E3] bg-[#e5e9e7] pb-[20px];
+    @apply flex flex-col items-center content-center gap-[20px] border-b border-[#E0E6E3] bg-[#e5e9e7] pb-[20px];
 }
 
 
@@ -106,15 +110,19 @@ body {
 }
 
 .real {
-    @apply flex pt-[120px] gap-[30px] border-t border-[#d4dbd7];
+    @apply flex  pt-[120px] gap-[30px] border-t border-[#d4dbd7];
 }
 
 .real-text {
-    @apply pt-[20px];
+    @apply  pt-[20px];
 }
 
 .real-text2 {
     @apply flex flex-col text-[#395852] pb-[20px] w-[30em] relative;
+}
+
+.mobreal-text2{
+    display: none;
 }
 
 .colorBox2 {
@@ -170,6 +178,10 @@ footer {
     @apply text-[#163A34] text-[25px];
 }
 
+.social-text2{
+    display: none;
+}
+
 .socialIcons {
     @apply flex gap-[5px];
 }
@@ -178,93 +190,3 @@ footer {
     @apply w-[25px] h-[25px];
 }
 
-@media (max-width: 768px) {
-
-
-    /* Header küçülür və spacing daha realist olur */
-    .header {
-        @apply flex items-center gap-[50px] h-[80px] pb-[10px] 
-        pt-[10px] pl-[10px] pr-[10px]  border-b border-[#d4dbd7] w-[1000px];
-        border: 1px solid red ;
-        
-
-
-      /*  @apply flex items-center gap-[250px] h-[100px] pb-[10px] 
-        pt-[10px] pl-[30px] pr-[30px] border-b border-[#d4dbd7];*/
-    }
-
-    /* Desktop menu tam gizlənir */
-    .header-menu,
-    .browse-recipes {
-        display: none;
-   
-    }
-
-    .head-logo {
-    @apply flex gap-[5px] w-[300px] pl-[50px];
-}
-
-.head-text {
-    @apply text-[#163A34] text-[15px];
-}
-
-.groupLogo {
-    @apply w-[100px] h-[100px] pl-[250px] ;
-    color: green;
-    border: 1px solid red;
-}
-    .mobMenu {
-        @apply relative inline-block flex items-center;
-
-    }
-
-    /* Hamburger button */
-    .dropbtn {
-        @apply bg-transparent border-none cursor-pointer p-[2px];
-    }
-
-    /* HTML-dən gələn linklər dropdown-a keçirilir */
-    .dropdown {
-        @apply absolute pt-[10px] bg-transparent w-[150px] z-50;
-        top: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-            /* left: 2px */
-    }
-
-    .dropdown a {
-        @apply px-[2px] py-[4px] text-[#163A34] flex flex-col items-center rounded-[10px] bg-none;
-        border: 1px solid red;
-    }
-
-    .dropdown a:hover {
-        @apply text-[15px];
-        text-decoration: underline #FE9F6B;
-        text-underline-offset: 6px;
-        transform: scale(1.2);
-    }
-
-    /* Açılan halda görünür */
-    .dropdown.show {
-        @apply flex;
-    }
-
-    .content{
-        /* @apply justify-start; */
-        display: flex;
-        align-items: flex-start;
-    }
-
-
-
-}
-
-/*.header-menu a:hover,
-    .mobMenu a:hover {
-        @apply text-[18px];
-        text-decoration: underline #FE9F6B;
-        text-underline-offset: 6px;
-        transform: scale(1.2);
-    }*/
