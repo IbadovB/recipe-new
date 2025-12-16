@@ -76,10 +76,10 @@
     }
 
     .colorBox {
-        @apply absolute w-[10px] h-[35px] bg-[#FE9F6B] rounded-[5px] border-none;
+        @apply absolute w-[115px] h-[15px] bg-[#FE9F6B] rounded-[5px] border-none;
         opacity: 0.3;
-        top: 150px;
-        left: 417px;
+        top: 105px;
+        left: 62px;
     }
 
 
@@ -87,7 +87,8 @@
         @apply text-[#fff] text-[15px] pt-[10px] pb-[10px] pr-[15px] pl-[15px] bg-[#163A34] rounded-[10px];
     }
 
-    .heroSubtitle {
+    .heroSubtitle,
+    .heroSubtitle3 {
         display: none;
     }
 

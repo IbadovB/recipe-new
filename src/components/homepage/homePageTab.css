@@ -1,0 +1,257 @@
+@media (min-width: 376px) and (max-width: 768px) {
+
+    .header {
+        @apply flex gap-[50px] h-[80px] pb-[10px] pt-[10px] border-b border-[#d4dbd7] pl-[50px];
+    }
+
+    .header-menu,
+    .browse-recipes,
+    .heroSubtitle {
+        display: none;
+    }
+
+    .mobBrowse {
+        @apply bg-[#163A34] text-[#fff] text-[25px] p-[5px] rounded-[5px] w-full;
+    }
+
+    .head-logo {
+        @apply flex items-center gap-[10px];
+    }
+
+    .head-text {
+        @apply text-[#163A34] text-[20px];
+    }
+
+    .groupLogo {
+        @apply w-[20px] h-[20px] pr-[0];
+        color: green;
+    }
+
+    .mobMenu {
+        display: block;
+        @apply relative inline-block flex items-center;
+    }
+
+    .mobMenu ul {
+        @apply flex justify-start pr-[5px] bg-transparent;
+        flex-direction: column
+    }
+
+    .dropbtn {
+        @apply flex items-center bg-transparent border-none cursor-pointer w-[100px] h-[100px] pt-[5px] w-[20px];
+    }
+
+    .dropdown {
+        @apply flex flex-col items-center absolute pt-[10px] bg-transparent w-full max-w-[100vw] left-[0] z-50;
+        top: 100%;
+        /* align-items: flex-start; */
+    }
+
+
+
+    .dropdown a {
+        @apply px-[2px] py-[4px] text-[#163A34] text-[25px] flex flex-col bg-[#fff] w-[200px];
+
+    }
+
+    .dropdown a:hover {
+        @apply text-[15px];
+        text-decoration: underline #FE9F6B;
+        text-underline-offset: 6px;
+        transform: scale(1.2);
+    }
+
+    .dropdown.show {
+        @apply flex;
+    }
+
+    .content {
+        @apply flex pl-[0];
+        align-items: flex-start;
+    }
+
+    .heroTitle {
+        @apply relative text-[#163A34] text-[40px] w-full h-[100px];
+        font-weight: bold;
+    }
+
+    .colorBox {
+        @apply absolute w-[155px] h-[25px] bg-[#FE9F6B] rounded-[5px] border-none;
+        opacity: 0.3;
+        top: 115px;
+        left: 130px;
+  
+    }
+
+
+    .exploring {
+        @apply text-[#fff] text-[25px] pt-[10px] pb-[10px] pr-[15px] pl-[15px] bg-[#163A34] rounded-[10px];
+    }
+
+    .heroSubtitle,
+    .heroSubtitle2 {
+        display: none;
+    }
+
+    .heroSubtitle3 {
+        @apply flex flex-col items-start w-[500px] text-[#395852] text-[15px] pb-[20px];
+    }
+
+    .mainContent {
+        @apply w-[500px] h-[300px] pt-[20px];
+    }
+
+    .features {
+        @apply text-[50px] text-[#395852] w-[500px] pt-[20px];
+        font-weight: bold;
+    }
+
+    .icon-text {
+        @apply flex flex-col pr-[10px] gap-[100px] pt-[10px];
+    }
+
+    .carrotIcon,
+    .featureIcon,
+    .searchIcon {
+        @apply w-[100px] h-[100px] pb-[15px];
+    }
+
+    .carrot,
+    .feature,
+    .search {
+        @apply flex flex-col;
+    }
+
+
+
+    .icon-header {
+        @apply text-[#163A34] text-[30px] w-[300px] pb-[10px];
+        font-weight: bold;
+    }
+
+    .carrot-text,
+    .feature-text,
+    .search-text {
+        @apply text-[#395852] w-[500px] text-[15px];
+    }
+
+    .real {
+        @apply flex flex-col pt-[50px] gap-[30px] border-t border-[#d4dbd7];
+    }
+
+    .real-header {
+        @apply w-[450px];
+    }
+
+    .real-text {
+        @apply pt-[20px] w-[500px];
+    }
+
+    .real-text2 {
+        /* @apply flex flex-col text-[#395852] pb-[20px] w-[30em] relative; */
+        display: none;
+    }
+
+    .colorBox2{
+            @apply absolute w-[70px] h-[10px] bg-[#FE9F6B] rounded-[5px] border-none;
+        opacity: 0.3;
+        top: 10px;
+        left: 395px;
+    }
+
+    .mobreal-text2 {
+        display: block;
+        @apply flex flex-col text-[#395852] text-[14px] pb-[20px] w-[550px] relative;
+    }
+
+    .mobreal-text3 {
+        @apply w-[500px];
+    }
+
+    .real-img {
+        @apply w-[500px] h-[300px];
+    }
+
+    footer {
+        @apply flex flex-col items-center pt-[200px] w-[100px];
+    }
+
+    /* .cook1 {
+        @apply bg-[#c9cdcc] flex justify-between 
+        rounded-[5px] w-[350px] pl-[10px] pr-[50px] 
+        pb-[20px] pl-[300px];
+    }*/
+
+    /* .cook-text {
+        @apply flex flex-col justify-center 
+        items-center pt-[10px] gap-[20px] w-[300px];
+    }*/
+
+    /* .cook {
+        @apply text-[#163A34] text-[20px] w-[150px];
+        font-weight: bold;
+    }*/
+
+    /*.cook2 {
+        @apply text-[#395852] text-[12px] pb-[30px] w-[500px];
+    }*/
+
+    .cook1 {
+        @apply bg-[#c9cdcc] w-[500px] flex items-center rounded-[15px] pr-[10px] pl-[10px];
+        position: relative;
+        left: 200%;
+    }
+
+    .cook-text {
+        @apply flex flex-col pt-[10px] gap-[20px] pl-[50px];
+    }
+
+    .cook {
+        @apply text-[#163A34] text-[30px] w-[400px];
+        font-weight: bold;
+    }
+
+    .cook2 {
+        @apply text-[#395852] text-[15px] pb-[30px] w-[450px];
+    }
+
+    .cook1 img {
+        @apply w-[170px] h-[170px]
+    }
+
+    .illustration {
+        position: absolute;
+        top: 50%;
+    }
+
+    .illustration2 {
+        position: absolute;
+        bottom: 65%;
+        left: 65%;
+    }
+
+    .browse-recipes2 {
+        @apply text-[#fff] bg-[#163A34] text-[10px] border-none pt-[10px] pb-[10px] pr-[15px] pl-[15px] mr-[40px] rounded-[5px];
+    }
+
+    .social {
+        @apply flex flex items-center pt-[20px] py-[5px] pb-[50px] gap-[170px] pr-[0];
+    }
+
+    .social-text {
+        @apply block w-[650px] pl-[370px] text-[15px];
+    }
+
+    .social-text2 {
+        display: none;
+    }
+
+    .socialIcons {
+        @apply flex gap-[5px];
+    }
+
+    .socialIcons img {
+        @apply w-[15px] h-[15px];
+    }
+
+}

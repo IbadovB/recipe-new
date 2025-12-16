@@ -3,7 +3,9 @@ body {
 }
 
 .header {
-    @apply flex items-center gap-[250px] h-[100px] pb-[10px] pt-[10px] pl-[30px] pr-[30px] border-b border-[#d4dbd7];
+    @apply flex items-center gap-[250px] 
+    h-[100px] pb-[10px] pt-[10px] pl-[30px] 
+    pr-[30px] border-b border-[#d4dbd7];
 }
 
 .head-logo {
@@ -42,12 +44,14 @@ body {
 
 
 .mobMenu,
-.heroSubtitle2 {
+.heroSubtitle2,
+.heroSubtitle3 {
     display: none;
 }
 
 .content {
-    @apply flex flex-col items-center content-center gap-[20px] border-b border-[#E0E6E3] bg-[#e5e9e7] pb-[20px];
+    @apply flex flex-col items-center content-center
+     gap-[50px] border-b border-[#E0E6E3] bg-[#e5e9e7] pb-[20px];
 }
 
 

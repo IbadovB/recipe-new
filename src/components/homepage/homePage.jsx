@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./homePage.css"
 import "./homePageMob.css"
+import "./homePageTab.css"
 
 
 function HomePage() {
@@ -46,7 +47,7 @@ function HomePage() {
 
             <div className="content">
                 <div className="heroTitle">Healthy meals, zero fuss</div>
-                {/* <div className="colorBox"></div> */}
+                <div className="colorBox"></div>
 
                 <div className="heroSubtitle">
                     <span>Discover eight quick, whole-food recipes that you can cook tonight</span>
@@ -58,6 +59,13 @@ function HomePage() {
                     <span>recipes that you can cook tonight-no</span>
                     <span> processed junk, no guesswork. </span>
                 </div>
+
+
+                <div className="heroSubtitle3">
+                    <span>Discover eight quick, whole-food recipes that you can cook tonight-no </span>
+                    <span> processed junk, no guesswork. </span>
+                </div>
+
 
 
                 <button className="exploring">Start exploring</button>
@@ -113,29 +121,33 @@ function HomePage() {
                                 <div className="colorBox2"></div>
 
                             </div>
+                            </div>
                    
                             
 
-   <div className="mobreal-text2">
-                            <span>Cooking shouldn't be complicated. </span>
-                            <span> These recipes come inunder 30 </span>
-                            <span>minutes of active time, fit busy</span>
+    <div className="mobreal-text2"> 
+                            <span>Cooking shouldn't be complicated. These recipes come inunder 30 minutes of </span>
+                            <span> active time, fit busy schedules, andtaste good enough to repeat. </span>
                             
-                            <span>schedules, andtaste good enough to </span>
-                            <span>repeat.</span>
+
+                              <div className="mobreal-text3">
+                                <span>Whether you are new to the kitchen or just need fresh ideas, we've got you </span>
+                                <span>covered.</span>
+                                <div className="colorBox2"></div>
+
+                            </div>
+                                          
 
                     </div>
 
-                         </div>
+                        
          
 
 
                 </div>
-                  <img src="Real.png" className="real-img" />   
+                  <img src="Real.png" className="real-img" />  
 
-
-            </div>
-        
+            </div>        
 
   <footer> 
                 <div className="cook1">
@@ -146,7 +158,7 @@ function HomePage() {
                         <button className="browse-recipes2"> Browse recipes </button>
                     </div>
 
-                    <img src="Illustration.png" className="illustration" />
+                    <img src="Illustration.png" className="illustration2" />
 
                 </div>
 
