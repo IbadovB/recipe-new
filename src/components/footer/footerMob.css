@@ -1,0 +1,84 @@
+@media (max-width: 390px) {
+
+     footer {
+        @apply flex flex-col items-center  pr-[16px] pl-[16px] ;
+        border: 1 px solid green;
+    }
+
+    .cook1 {
+        @apply bg-[#c9cdcc] flex items-center  pl-[16px]
+         pr-[16px] rounded-[16px] w-[300px];
+           border: 1 px solid red;
+    }
+
+
+   .cook1 .cook-text {
+        @apply flex flex-col items-center;
+        align-items: center;
+          border: 1 px solid green;
+    }
+
+   .cook-text .mobcook {
+        @apply flex flex-col items-center text-[#163A34] 
+        text-[40px] pt-[20px];
+        font-weight: 750;
+          border: 1 px solid green;
+    }
+
+    .cook-text .cook {
+        display: none;
+    }
+
+    .cook-text .mobcook2 {
+
+        @apply flex w-[310px] flex-col items-center 
+        text-[#395852] text-[20px] pb-[20px] pt-[20px] pb-[20px];
+        font-weight: 500;
+    }
+
+    .cook-text .cook2,
+   .cook1 .illustration,
+   .cook1 .illustration2 {
+        display: none;
+    }
+
+    .recipe-button{
+        @apply pl-[40px] pb-[20px];
+    }
+
+     .cook-text .browse-recipes2 {
+        @apply text-[#fff] bg-[#163A34] text-[20px] 
+        h-[57px] border-none pt-[10px] pb-[10px] 
+        pr-[25px] pl-[20px] rounded-[10px];
+
+    }
+
+    .social {
+        @apply flex flex-col items-center pt-[60px] pl-[16px] pr-[16px]
+     pb-[50px] gap-[50px];
+          border: 1px solid red;
+        }
+
+ 
+
+    .social .social-text2 {
+        @apply flex items-center 
+        text-[#163A34] text-[25px] pl-[16px] pr-[16px];    
+        border: 1px solid red ; 
+    }
+
+    .social .socialIcons {
+        @apply flex items-center h-[50px] gap-[20px] pt-[20px];
+             border: 1px solid red;
+    }
+
+    .socialIcons .soc-icon1 img {
+        @apply w-[35px] h-[35px];
+    }
+
+    body .social .social-text {
+        display: none;
+              border: 1px solid red;
+    }
+
+}

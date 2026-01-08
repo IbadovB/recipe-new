@@ -1,0 +1,69 @@
+.header {
+    @apply flex border-b border-[#d4dbd7] h-[50px] pl-[20px] pr-[20px] pb-[20px];
+    justify-content: space-between;
+    align-items: center
+}
+
+.head-logo {
+    @apply flex gap-[10px];
+}
+
+.head-text {
+    @apply text-[#163A34] text-[20px] w-[200px]  pt-[10px];
+}
+
+.header .groupLogo {
+    @apply w-[34px] h-[40px];
+}
+
+.header.header-menu {
+    /* @apply w-[20px] h-[30px];  */
+  
+}
+
+.header-menu ul {
+    /* display: block; */
+    @apply w-[450px] h-[30px] flex flex-row gap-[80px];
+    
+
+}
+
+.menu-link {
+    @apply text-[#163A34] text-[20px];
+text-decoration: none;
+}
+
+    .menu-link.active {        
+        text-decoration: underline #FE9F6B;
+        border: none
+    }
+
+.header-menu ul li {
+    @apply bg-transparent   border-transparent outline-none inline-block;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.header-menu a:hover {
+    @apply text-[25px];
+    /* text-decoration: underline #FE9F6B; */
+
+    text-underline-offset: 6px;
+    transform: scale(1.2);
+}
+
+.browse-recipes {
+    @apply text-[#fff] bg-[#163A34] border-none pt-[15px] pb-[15px] pr-[20px] pl-[20px] rounded-[10px];
+}
+
+
+.mobMenu {
+    display: none;
+}
+
+
+
+
+
+
+

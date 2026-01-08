@@ -1,0 +1,57 @@
+body {
+    @apply flex flex-col items-center bg-[#e5e9e7];
+}
+
+.header {
+    @apply flex items-center gap-[250px] h-[100px] pb-[10px] pt-[10px] pl-[30px] pr-[30px] border-b border-[#d4dbd7];
+}
+
+.head-logo {
+    @apply flex gap-[10px];
+}
+
+.head-text {
+    @apply text-[#163A34] text-[20px];
+}
+
+.groupLogo {
+    @apply w-[30px] h-[30px];
+}
+
+.header-menu ul {
+    @apply w-[450px] flex flex-row gap-[80px]
+}
+
+.header-menu ul li {
+    @apply bg-transparent text-[#163A34] border-transparent outline-none inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li .home {
+    text-decoration: none;
+     text-underline-offset: none;
+}
+
+ul li .about {
+    @apply text-[18px];
+    text-decoration: underline #FE9F6B;
+    text-underline-offset: 6px;
+}
+
+.header-menu ul li:hover {
+    @apply text-[18px];
+    transform: scale(1.2);
+}
+
+.browse-recipes,
+.browse-recipes2 {
+    @apply text-[#fff] bg-[#163A34] border-none pt-[10px] pb-[10px] pr-[20px] pl-[20px] rounded-[10px];
+}
+
+
+
+.mobMenu,
+.heroSubtitle2,
+.heroSubtitle3 {
+    display: none;
+}
