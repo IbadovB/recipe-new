@@ -1,57 +1,116 @@
-body {
-    @apply flex flex-col items-center bg-[#e5e9e7];
+@reference "tailwindcss";
+
+.mission {
+    @apply grid pt-[50px] pb-[100px] border-b border-[#d4dbd7] px-[16px] lg:grid-cols-[510px_618px]
+     lg:place-content-center lg:gap-[64px];
 }
 
-.header {
-    @apply flex items-center gap-[250px] h-[100px] pb-[10px] pt-[10px] pl-[30px] pr-[30px] border-b border-[#d4dbd7];
+.mission1 {
+  @apply lg:pt-[40px];
 }
 
-.head-logo {
-    @apply flex gap-[10px];
+.mission1 h3 {
+    @apply text-[20px] text-[#163A34] bg-[#FE9F6B] font-bold leading-[140%] font-[Nunito] px-[6px] py-[2px] rounded-[6px] w-[119px];
 }
 
-.head-text {
-    @apply text-[#163A34] text-[20px];
-}
-
-.groupLogo {
-    @apply w-[30px] h-[30px];
-}
-
-.header-menu ul {
-    @apply w-[450px] flex flex-row gap-[80px]
-}
-
-.header-menu ul li {
-    @apply bg-transparent text-[#163A34] border-transparent outline-none inline-block;
-    transition: transform 0.3s ease-in-out;
-}
-
-ul li .home {
-    text-decoration: none;
-     text-underline-offset: none;
-}
-
-ul li .about {
-    @apply text-[18px];
-    text-decoration: underline #FE9F6B;
-    text-underline-offset: 6px;
-}
-
-.header-menu ul li:hover {
-    @apply text-[18px];
-    transform: scale(1.2);
-}
-
-.browse-recipes,
-.browse-recipes2 {
-    @apply text-[#fff] bg-[#163A34] border-none pt-[10px] pb-[10px] pr-[20px] pl-[20px] rounded-[10px];
+.missionHeader h1 {
+    @apply text-[40px] font-extrabold font-[nunito]
+     leading-[120%] text-[#163A34] pr-[10px] pb-[20px] md:text-[48px] md:pr-[20px] lg:text-[48px] lg:pr-[40px];
 }
 
 
+.mission-text1 {
+    @apply text-[20px] font-medium font-[nunitosans] leading-[150%]
+     text-[#395852] pr-[20px] pb-[30px] md:pr-[70px] lg:pr-[18px];
+}
 
-.mobMenu,
-.heroSubtitle2,
-.heroSubtitle3 {
-    display: none;
+.mission-text2 {
+    @apply text-[20px] font-medium font-[nunitosans] leading-[150%] text-[#395852] pr-[20px] pb-[30px] md:pr-[50px];
+}
+
+.mission-photo img {
+    @apply w-[100%];
+}
+
+.exist {
+    @apply pt-[100px] gap-[100px] px-[16px] border-b border-[#d4dbd7]
+     pb-[100px] lg:grid lg:grid-cols-[372px_756px] lg:gap-[64px] lg:place-content-center;
+}
+
+.existHeader {
+    @apply text-[40px] font-[nunito] font-extrabold leading-[120%] text-[#163A34] 
+    pb-[50px] md:text-[48px] lg:text-[48px];
+}
+
+.exist_items{
+    @apply grid gap-[30px];
+}
+
+.exist_item {
+    @apply grid grid-cols-[32px_291px] gap-[20px] md:grid-cols-[32px_652px] 
+    md:gap-[20px] lg:grid-cols-[32px_704px] lg:gap-[20px];
+}
+
+.exist_items img {
+    @apply text-[#163A34];
+}
+
+.exist-text1 {
+    @apply text-[24px] font-bold font-[nunito] leading-[130%] text-[#163A34];
+    border: 1px solid red;
+}
+
+.exist-text2 {
+    @apply text-[20px] font-medium font-[nunitosans] leading-[150%] text-[#395852] pr-[24px] lg:pr-[50px];
+}
+
+
+.philosophy {
+    @apply pt-[100px] px-[16px] border-b border-[#d4dbd7] lg:grid lg:grid-cols-[376px_752px] lg:gap-[64px] lg:place-content-center;
+}
+
+.philosophyHeader {
+    @apply text-[40px] font-extrabold font-[nunito] leading-[120%] text-[#163A34] pr-[100px] pb-[50px] md:text-[48px] lg:text-[48px];
+}
+
+.philosophy_items{
+    @apply grid gap-[30px];
+}
+
+.philosophy_item {
+    @apply grid grid-cols-[32px_291px] gap-[20px] md:grid-cols-[32px_652px] md:gap-[20px] lg:grid-cols-[32px_700px] lg:gap-[20px];
+}
+
+.philosophy-text1 {
+    @apply text-[24px] font-semibold font-[inter] pb-[20px] text-[#163A34];
+}
+
+.philosophy-text2 {
+    @apply text-[20px] font-medium font-[nunitosans] leading-[150%] text-[#395852] 
+    pr-[26px] pb-[50px] md:pr-[100px] lg:pr-[45px] ;
+}
+
+
+.beyond {
+    @apply pt-[100px] pb-[50px] px-[16px] lg:grid lg:grid-cols-[376px_744px] lg:px-0 lg:place-content-center lg:gap-[64px];
+}
+
+.beyond-header {
+    @apply text-[40px] text-[#163A34] leading-[120%] pb-[30px] font-extrabold font-[nunito] lg:text-[48px] lg:pt-[10px];
+}
+
+.belive-text {
+    @apply text-[20px] font-medium font-[nunitosans] text-[#395852] leading-[150%] pb-[12px] md:pr-[50px];
+}
+
+.dinners-text ul li {
+    @apply text-[20px] font-medium font-[nunitosans] text-[#395852] leading-[150%] pb-[5px] lg:pr-[10px] ;
+  }
+
+.beyondPhoto {
+    @apply grid content-center ;
+}
+
+.beyondPhoto img {
+       @apply w-[100%];
 }

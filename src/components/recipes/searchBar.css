@@ -1,0 +1,32 @@
+@reference "tailwindcss";
+
+.recipe-search {
+    @apply inline-grid max-w-[350px] grid-cols-[auto_auto_auto] lg:grid-cols-[20px_full] content-center 
+    items-center bg-none border-none  py-[10px] px-[5px] ;
+}
+
+ .recipe-search  .searchInputWrapper {
+    @apply inline-grid  grid-cols-[45px_1fr_auto]  rounded-[10px]  
+    bg-transparent outline-none items-center gap-[10px] tracking-[-0.3px] 
+     font-[nunito] font-semibold text-[18px] leading-[150%] text-[#163A34] py-[3px] px-[5px];
+}
+
+.recipe-search input {
+    @apply outline-transparent  bg-[#fff];
+  
+}
+
+.recipe-search input content{
+@apply w-full
+}
+
+
+ .searchText {
+    @apply border-none;
+  
+}
+
+.recipe-search .clearSearchBtn{
+    @apply border-none font-[nunito] font-semibold text-[18px]
+     leading-[150%] text-[#163A34] pl-[20px];
+}

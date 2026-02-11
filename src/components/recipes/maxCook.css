@@ -1,0 +1,33 @@
+@reference "tailwindcss";
+
+.maxCookTime{
+  @apply relative;
+}
+
+  .maxCookDropdown{
+      @apply absolute bg-[#fff] top-[110%] left-0 z-50  rounded-[8px];
+    }
+   
+.maxCookDropdown ul,
+.maxCookDropdown .clearBtn{
+  @apply grid w-[150px] pr-[60px] content-start list-none text-[18px] font-[nunito] font-semibold 
+  leading-[150%] text-[#293241]  pr-[70px] pl-[10px] lg:w-[200px]; 
+    }  
+
+    .maxCookDropdown ul li,
+    .clearBtn{
+    @apply grid grid-cols-[13%_90%] gap-[5px] items-center border-none outline-none;
+    }
+
+    .dropdownItem input[type="radio"] {
+  /* @apply accent-color-[#293241] ; */
+}
+
+.maxCookDropdown .clearBtn {
+  @apply border-none;
+}
+
+
+
+
+    

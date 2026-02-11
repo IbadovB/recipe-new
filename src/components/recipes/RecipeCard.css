@@ -1,0 +1,119 @@
+@reference "tailwindcss";
+
+.recipe-main{
+  @apply bg-[#fff] w-[100%];
+}
+
+.recipe-card {
+  @apply grid rounded-[10px] px-[8px] py-[8px]
+   overflow-hidden bg-white shadow-md transition gap-[16px] 
+   duration-300 ease-in-out;
+}
+
+.recipe-card-img {
+  @apply w-full; 
+  /*object-cover block;*/
+}
+
+.recipe-card-title {
+  @apply text-[20px] font-[nunito] 
+  font-bold tracking-[-0.5px]
+   text-[#163A34] leading-[140%] pt-[10px] pb-[5px];
+}
+
+.recipe-card-description {
+  @apply text-[16px] font-medium font-[nunitosans]
+   text-[#395852] tracking-[-0.3px]
+    leading-[150%] lg:h-[48px];
+}
+
+.recipe-card-icons {
+  @apply grid grid-cols-[108px_122px] gap-[8px] pt-[10px] md:grid-cols-[104px_113px_116px] md:gap-[16px]  ;
+    border: 1px solid red;
+}
+
+/*.recipe-card-icons-row1,
+.recipe-card-icons-row2 {
+  @apply flex gap-[16px];
+}*/
+
+.recipe-card-icon-item {
+  @apply grid grid-cols-[20%_100%]  gap-[6px]  pb-[20px];
+  border: 1px solid red;
+}
+
+.recipe-card-icon-item img{
+  @apply pt-[2px]
+}
+
+
+
+.recipe-card-icon-item .icon-text{
+  @apply font-medium font-[nunitosans] 
+  leading-[150%] tracking-[-0.3px] text-[16px] text-[#163A34];
+}
+
+
+
+.view-recipe button {
+  @apply  w-full pt-[12px] px-[32px] py-[12px] bg-[#163A34] text-[#fff] text-[16px] font-bold font-[nunitosans] rounded-[999px];
+}
+
+.view-recipe button:hover {
+  @apply bg-[#395852];
+}
+
+.view-recipe button:active {
+  @apply bg-[#163A34];
+}
+
+/*.view-recipe button {
+  @apply w-full py-[10px] px-[16px] bg-[#163A34] text-white border-0 rounded-full
+   text-[14px] font-semibold cursor-pointer transition-colors duration-300 ease-in-out;
+}
+
+.view-recipe button:hover {
+  @apply bg-[#395852];
+}
+
+
+
+/*.rec-ing,
+.rec-inst{
+  @apply pl-[0] place-items-start;
+}
+
+.recipe-ingredients,
+.recipe-instructions {
+    @apply text-[24px] font-bold font-[nunito] leading-[130%] 
+    text-[#163A34] tracking-[-1px];
+    border: 1px solid red;
+}
+
+.recipe-details{
+  @apply flex flex-col gap-[16px];
+}
+
+.recipe-details ul{
+  @apply pl-0 grid gap-[16px];
+}
+
+.recipe-details img{
+@apply self-center;
+}
+
+.recipe-details ul li{
+  @apply list-none grid grid-cols-[10%_90%] gap-[8px] text-[20px] 
+  font-medium font-[nunitosans] leading-[150%] 
+    text-[#395852] tracking-[-0.4px];
+        border: 1px solid red;
+}*/
+
+
+
+
+
+
+
+
+

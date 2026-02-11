@@ -1,0 +1,31 @@
+@reference "tailwindcss";
+
+.maxPrepTime{
+  @apply relative;
+}
+
+.maxPrepDropdown{
+  @apply absolute top-[110%] left-0  z-50 bg-[#fff]  rounded-[8px] /*p-[12px]*/;
+}
+
+.maxPrepDropdown ul,
+.maxPrepDropdown .clearBtn {
+  @apply grid content-start w-[150px] pr-[60px] list-none lg:w-[200px] text-[18px] font-[nunito] font-semibold 
+  leading-[150%] text-[#293241] pl-[10px]; 
+    }
+
+    .maxPrepDropdown ul li{
+    @apply grid grid-cols-[13%_90%] gap-[5px] items-center;
+    }
+
+    .maxPrepDropdown .clearBtn {
+      @apply  pl-0 pr-0;
+    }
+
+    .dropdownItem input[type="radio"] {
+  /* @apply text-[#293241] ; */
+}
+
+
+
+    

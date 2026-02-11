@@ -1,0 +1,27 @@
+@reference "tailwindcss";
+
+.servingNumber{
+  @apply relative;
+}
+
+.serviceDropdown ul,
+.serviceDropdown .clearBtn{
+  @apply grid w-[350px] content-start list-none text-[18px] font-[nunito] font-semibold 
+  leading-[150%] text-[#293241] w-[250px] pl-[10px]; 
+    }
+
+    .serviceDropdown{
+      @apply absolute bg-[#fff] top-[100%] left-0 z-50  rounded-[8px];
+    }
+
+    .serviceDropdown ul li{
+    @apply grid grid-cols-[10%_90%] gap-[5px] items-center;
+    }
+
+       .dropdownItem input[type="radio"] {
+  /* @apply accent-color-[#293241] ; */
+}
+
+.clearBtn{
+  @apply grid content-start;
+}

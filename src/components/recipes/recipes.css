@@ -1,0 +1,65 @@
+@reference "tailwindcss";
+
+.recipesHeader {
+    @apply grid gap-[12px] pb-[12px] lg:grid lg:place-items-center;
+}
+
+.recipes h1 {
+    @apply font-extrabold font-[nunito] text-[40px] leading-[120%] text-[#163A34];
+}
+
+.recipesHead-text {
+    @apply font-medium font-[nunitosans] text-[20px] leading-[150%] text-[#395852] 
+    pb-[30px] pr-[55px] tracking-[-0.4px] md:pr-[150px] lg:text-center lg:indent-[50px]
+     lg:pr-[375px] lg:pl-[355px];
+}
+
+.recipe-buttons {
+    @apply grid gap-[15%] items-center  md:grid-cols-[4] 
+    lg:grid-cols-[866px_310px] pb-[50px]
+     lg:place-content-start;
+
+}
+
+.recipe-buttons button{
+    @apply place-content-center;
+}
+
+.recipe-buttons2 {
+    @apply relative grid gap-[12px] md:grid-cols-3 
+    lg:grid-cols-[181px_184px_184px]
+     lg:gap-[16px]; 
+}
+
+.recipe-buttons2 .maxPrepBtn,
+.recipe-buttons2 .maxCookBtn,
+.recipe-buttons2 .servingBtn {
+    @apply grid gap-[8px] grid-cols-[124px_20px] font-semibold 
+    font-[nunito] text-[18px] text-[#163A34] 
+    leading-[150%] px-[16px] py-[10px] rounded-[10px]
+     tracking-[-0.3px] w-full border-none outline-[#E0E6E3] content-center items-center;
+}
+
+.recipe-buttons button {
+    @apply  grid grid-cols-[20px_245px]  bg-[#fff] ;
+}
+
+.recipe-buttons .recipe-search{
+    @apply bg-[#fff] outline-none rounded-[10px];
+}
+
+.maxPrepBtn ul{
+@apply list-none;
+}
+
+
+.recipe-list {
+    @apply grid lg:grid-cols-3 gap-[24px] lg:border-b
+     lg:border-[#d4dbd7] pb-[50px];
+
+}
+
+
+.recipes footer {
+    display: none;
+}

@@ -1,0 +1,23 @@
+@reference "tailwindcss";
+
+.social {
+@apply  pt-[50px] grid  place-items-center gap-[30px]  md:grid-cols-2 md:gap-[400px]
+ lg:grid-cols-2 lg:gap-[750px];
+ }
+
+.social .social-text {
+     @apply  hidden text-center font-[Nunito] font-[medium] text-[16px] text-[#163A34] leading-[150%] md:grid ;
+ }
+
+.social-text-2 {
+     @apply font-[Nunito] font-[medium] text-[16px] text-[#163A34] leading-[150%] pl-[50px] pr-[50px] md:hidden lg:hidden;
+ }
+
+ .socialIcons {
+     @apply grid grid-cols-3 gap-[20px] text-center;
+ }
+
+ .socialIcons button{
+    @apply w-[22px] h-[22px] outline-none border-none bg-[#e5e9e7] lg:p-0;
+ }
+

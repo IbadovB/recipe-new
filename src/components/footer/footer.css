@@ -1,85 +1,50 @@
+ @reference "tailwindcss";
+
  footer {
-     @apply flex flex-col  pt-[50px] h-[354px] pr-[20px] pl-[20px] pb-[50px];
-     justify-content: center;
+     @apply relative inline-grid place-items-center pt-[50px] pr-[15px] pl-[15px]
+     content-center ;
  }
 
  .cook {
-     @apply flex items-center flex-col pt-[90px];
+     @apply grid grid-cols-3 rounded-[16px] text-center bg-[#c9cdcc] pt-[90px] pb-[100px] lg:w-[85.5%]
+  }
+
+ .cook-text {
+     @apply grid w-[150%] pl-[30px] md:text-center md:pl-[200px]
+      md:w-[150%] md:z-10 md:place-items-center lg:place-items-center  lg:pl-[300px] lg:w-[150%] ;     
+   }
+
+
+ .illustration1 {
+     @apply absolute hidden  z-0 md:grid md:bottom-0  lg:grid lg:bottom-0;   
+ }
+
+ .illustration2 {
+     @apply hidden md:grid md:absolute z-0 md:left-[62%] md:right-0 md:top-[7%] 
+     lg:grid lg:absolute lg:left-[73%] lg:right-0 lg:top-[6%];    
  }
 
 
- .cook1 {
-     @apply bg-[#c9cdcc] h-[400px] rounded-[15px];
-     position: relative;
-  
- }
-
- footer .cook-text {
-     @apply flex flex-col items-center pt-[5px] gap-[20px]  text-[#163A34] text-[40px];
-
-     font-weight: 800;
- }
-
- .cook2 {
-     @apply text-[#395852]  text-[20px] pb-[30px] pt-[10px] ;
-     font-weight: 500;
- }
-
-
-
- .cook1 .illustration {
-     @apply w-[98px] h-[350px];
-     position: absolute;
-     bottom: 0;
- }
-
- .cook1 .illustration2 {
-     @apply w-[65px] h-[360px];
-     position: absolute;
-     bottom: 4%;
-     left: 95%;
-     right: 0;
- }
-
-.cook1 button{
-    @apply flex items-center;
-}
-
- .recipe-button{
-        @apply pl-[40px] pb-[20px];
+ .cook-header {
+     @apply font-[Nunito]  text-center font-extrabold leading-[120%] w-[150%] text-[#163A34] text-[40px] content-center 
+     pb-[30px] pl-[10px] md:text-[48px] lg:pl-[0] lg:text-[48px] lg:w-[160%];
     }
 
- .browse-recipes2 {
-     @apply text-[#fff] bg-[#163A34] text-[18px] 
-     border-none pt-[15px] pb-[15px] pr-[35px] pl-[35px] 
-     rounded-[5px]  h-[57px];
-     font-weight: 800;
+ .cook-text2 {
+     @apply font-[Nunito] text-center content-center font-medium text-[#163A34] pl-0 w-[160%]
+      md:z-10 text-[20px] leading-[150%] md:pr-[40px] md:pl-[40px] lg:pl-0 lg:w-[160%];
  }
 
- .social {
-     @apply flex items-center h-[104px] pl-[30px] pr-[30px];
-     justify-content: space-between;
-
+ .recipe-button .button {
+     @apply grid text-[18px] font-bold font-[Nunito] px-[24px] py-[16px] rounded-[10px] no-underline;
  }
 
- .social .social-text {
-     @apply flex  h-[24px] text-[16px];
-     font-weight: 500;
+ .recipe-button {
+     @apply grid  w-[100%] pl-[50px] md:pl-[20px] content-center md:place-items-center 
+     lg:place-items-center lg:pl-[0] pt-[50px];
  }
 
- .social-text2 {
-     display: none;
- }
 
- .socialIcons {
-     @apply flex gap-[5px];
- }
 
- .socialIcons img {
-     @apply w-[22px] h-[22px];
- }
 
- .mobcook,
- .mobcook2 {
-     display: none;
- }
+ 
