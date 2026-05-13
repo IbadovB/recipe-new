@@ -1,8 +1,15 @@
 @reference "tailwindcss";
 
+/* * { 
+    outline: 1px solid red !important;
+}*/
+
 .header {
-    @apply inline-grid content-center grid-cols-[285px_40px] p-[16px] md:grid-cols-[664px_40px] md:px-[20px] md:py-[32px] /*lg:grid-cols-[248.48px_811.52px_260px]*/ lg:grid-cols-[25%_65%_10%]  lg:px-[60px] lg:py-[20px] border-b border-[#d4dbd7];
+    @apply grid content-center grid-cols-[285px_40px] p-[16px] md:grid-cols-[664px_40px] md:px-[20px] md:py-[32px]
+  lg:grid-cols-[22%_58%_20%] lg:px-[60px] lg:py-[20px] border-b border-[#d4dbd7] ;
+ 
 }
+
 
 .head-logo {
     @apply flex items-center gap-[8px];
@@ -12,45 +19,48 @@
     @apply text-[#163A34] text-[16px] md:text-[20px] xl:text-[20px] font-semibold;
 }
 
-
 .header-menu {
-    @apply hidden lg:grid grid-cols-3 place-content-center  h-[27px] pt-[10px] pl-[300px] ;
+    @apply hidden lg:flex justify-self-center items-center lg:gap-[100px];
 }
 
 .header-menu ul {
-    @apply grid grid-cols-3 gap-[150px] text-[#163A34] content-center;
+    @apply flex gap-[100px] text-[#163A34];
 }
 
-
 .menu-link {
-    @apply text-[#163A34] text-[18px] font-semibold font-[Nunito] leading-[150%];
+    @apply inline-block text-[#163A34] text-[18px] font-semibold font-[Nunito] leading-[150%];
     text-decoration: none;
 }
 
- .header-menu ul li  .active {
-    @apply text-[20px]  text-[#163A34] font-semibold font-[Nunito] leading-[50%] pb-[20px];
+.header-menu ul li .active {
+    @apply text-[20px] text-[#163A34] font-semibold font-[Nunito] leading-[50%] ;
     text-decoration: underline #FE9F6B;
-       text-underline-offset: 5px;
+    text-underline-offset: 5px;
     border: none;
 }
 
 .header-menu ul li {
-    @apply bg-transparent border-transparent outline-none inline-block;
+    @apply bg-transparent border-transparent outline-none
+     inline-block;
     transition: transform 0.3s ease-in-out;
 }
 
+.button--primary {
+    @apply inline-block flex items-center w-[100%];
+}
+
 .header-menu a:hover {
-    @apply text-[20px];
     text-underline-offset: 6px;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .mobMenu {
     @apply grid pt-[10px] lg:hidden;
-   }
+}
 
 .mobMenu .dropdown ul {
-    @apply grid grid-rows-4 bg-[#fff] absolute left-[5] z-50 px-[8px] py-[12px] md:py-[8px] list-none rounded-[8px];
+    @apply grid grid-rows-4 bg-[#fff] absolute left-[5]
+     z-50 px-[8px] py-[12px] md:py-[8px] list-none rounded-[8px];
     top: 100%;
     border: none;
 }
@@ -69,14 +79,13 @@
 }
 
 .mobMenu .dropdown {
-    @apply grid grid-rows-4 relative content-start right-[295px] text-[#293241] 
-    text-[18px] font-semibold text-start font-[Nunito] leading-[150%] md:right-[670px];
+    @apply grid grid-rows-4 relative content-start right-[295px] text-[#293241] text-[18px] 
+    font-semibold text-start font-[Nunito] leading-[150%] md:right-[670px];
     border: none;
 }
 
 .mobMenu .dropdown .button {
-    @apply bg-[#163A34] grid text-[#fff] px-[8px] font-bold text-[20px]
-     leading-[140%] rounded-[10px] border-none font-[Nunito] place-content-center h-[100%];
+    @apply bg-[#163A34] grid text-[#fff] px-[8px] font-bold text-[20px] leading-[140%] rounded-[10px] border-none font-[Nunito] place-content-center h-[100%] pl-[0] w-[98%] md:w-[99%];
     text-decoration: none;
 
 }
@@ -106,27 +115,8 @@
     text-decoration: none;
 }
 
-/*.mobMenu .dropdown ul li:hover {
-    text-decoration: underline #FE9F6B;
-    text-underline-offset: 6px;
-    transform: scale(1.2);
-}*/
 
 .mobMenu .dropbtn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
-
-/*.header {
-    position: relative;
-}
-
-.header-progress {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(90deg, #4caf50, #81c784);
-    animation: loading 1s linear infinite;
-}*/

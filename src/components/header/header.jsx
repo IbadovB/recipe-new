@@ -44,6 +44,7 @@ function Header() {
                         <li>
                             <NavLink
                                 to="/about"
+                                end
                                 className={({ isActive }) =>
                                     `menu-link ${isActive ? "active" : ""} ${isNavigating ? "disabled" : ""}`
                                 }
@@ -56,7 +57,7 @@ function Header() {
                             <NavLink
                                 to="/recipes"
                                 end
-                                className={({ isActive }) =>
+                               className={({ isActive }) =>
                                     `menu-link ${isActive ? "active" : ""} ${isNavigating ? "disabled" : ""}`
                                 }
                             >
@@ -75,7 +76,7 @@ function Header() {
                     </button>
 
                     {open && (
-                        <div className="dropdown">
+                       <div className="dropdown">
                             <ul>
                                 <li>
                                     <NavLink
@@ -102,7 +103,6 @@ function Header() {
                                     </NavLink>
                                 </li>
 
-
                                 <li>
                                     <NavLink
                                         to="/recipes"
@@ -113,33 +113,18 @@ function Header() {
                                     >
                                         Recipes
                                     </NavLink>
-                                </li>
+                                </li>                              
+                              
 
-                                
-                                    {/*   <button className="mobBrowse">
-                                        <NavLink
-                                            to="/recipes"
-                                            end
-                                            onClick={closeMenu}
-                                            className={'button button--primary'}
-                                        >
-                                            Browse recipes
-                                        </NavLink>
-                                    </button>*/}
-
-
-      <NavLink
+                                      <NavLink
                                         to="/recipes"
+                                        end
                                         onClick={closeMenu}
                                         className={'button button--primary'}
                                     >
                                         Browse recipes
-                                    </NavLink>
-                                    
-                             
-                              
-                                    {/* {isNavigating && <div className="header-progress" />} */}
-                                
+                                    </NavLink>                                
+                                                                  
 
                             </ul>
 
@@ -148,7 +133,6 @@ function Header() {
 
                 </div>
 
-                {/* <button className="browse-recipes"> Browse recipes </button> */}
 
                 <NavLink
                     to="/recipes"

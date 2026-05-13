@@ -15,13 +15,6 @@
 @apply lg:grid lg:grid-cols-2 lg:gap-[40px]; 
 }
 
-/*.back-button {
-   @apply bg-transparent border-none text-[#4caf50] text-[16px] font-semibold cursor-pointer mb-[20px] transition-colors duration-300 ease-in-out;
-}
-
-.back-button:hover {
-  @apply text-[#45a049] underline;
-}*/
 
 .recipeNameText{
   @apply grid grid-cols-[72px_290px] lg:grid-cols-[72px_1108px]
@@ -46,9 +39,6 @@
   @apply  w-full
 }
 
-.recipe-detail-info {
-  /* @apply p-[30px]; */
-}
 
 .recipe-detail-info h1 {
  @apply text-[40px] text-[#163A34] font-[nunito] 
@@ -128,134 +118,3 @@
   @apply font-[nunito] font-[bold] text-[32px]
    text-[#163A34] leading-[130%] tracking-[-1px] pb-[10px] 
 }
-
-
-
-/*.ingredients-list li,
-.instructions-list li {
-  @apply text-[15px] text-[#555] leading-[1.8] 
-  mb-[12px] pl-0;
-}*/
-
-/*.instructions-list li {
-  @apply relative pl-[30px];
-
-}*/
-
-
-
-/*.instructions-list li::before {
-  @apply absolute left-0 top-0 bg-[#4caf50] text-white w-[24px] h-[24px] rounded-full flex items-center justify-center text-[12px] font-semibold;
-}
-
-.recipe-not-found {
-  @apply bg-white p-[60px_30px] rounded-[12px] text-center shadow-[0_2px_8px_rgba(0,0,0,0.1)];
-}
-
-.recipe-not-found h2 {
-  @apply text-[24px] text-[#666] mb-[20px];
-}
-
-.recipe-not-found button {
-  @apply bg-[#4caf50] text-white border-none py-[12px] px-[24px] rounded-[6px] text-[16px] font-semibold cursor-pointer transition-colors duration-300 ease-in-out;
-}
-
-.recipe-not-found button:hover {
-  @apply bg-[#45a049];
-
-  }
-
-
-  .recipe-detail-content{
-  @apply flex flex-col gap-[16px];
-}
-
- .recipe-detail-content ul{
-  @apply pl-0 grid gap-[16px];
-}
-
- .recipe-detail-content img{
-@apply self-center;
-}
-
- .recipe-detail-content .ingredients-section ul li,
- .recipe-detail-content .instructions-section ul li{
-  @apply list-none grid grid-cols-[10%_90%] gap-[8px] text-[20px] 
-  font-medium font-[nunitosans] leading-[150%] 
-    text-[#395852] tracking-[-0.4px];
-        border: 1px solid red;
-}*/
-
-
-/* Mobile Responsive */
-/*@media (max-width: 768px) {
-
-  .recipe-detail-container {
-    padding: 15px;
-  }
-
-  .recipe-detail-image {
-    height: 250px;
-  }
-
-  .recipe-detail-info {
-    padding: 20px;
-  }
-
-
-
-
-  .recipe-detail-content {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .ingredients-section,
-  .instructions-section {
-    padding: 20px;
-  }
-
-  .ingredients-section h2,
-  .instructions-section h2 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .recipe-detail-container {
-    padding: 12px;
-  }
-
-  .recipe-detail-image {
-    height: 200px;
-  }
-
-  .recipe-detail-info {
-    padding: 15px;
-  } 
-
-  .ingredients-section,
-  .instructions-section {
-    padding: 15px;
-  }
-
-  .ingredients-section h2,
-  .instructions-section h2 {
-    font-size: 18px;
-  }
-
-  .ingredients-list li,
-  .instructions-list li {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .instructions-list li {
-    padding-left: 28px;
-  }
-
-  .instructions-list li::before {
-    width: 22px;
-    height: 22px;
-  }
-}*/

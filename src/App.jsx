@@ -1,4 +1,4 @@
-/*import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/layout";
 import HomePage from "./components/home/homepage/homePage";
 import About from "./components/about/about";
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;*/
+export default App;

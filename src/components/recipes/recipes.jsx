@@ -15,7 +15,7 @@ import './recipes.css'
 
 function Recipes() {
     const [open, setOpen] = useState(false);
-    const closeMenu = () => setOpen(false);
+    // const closeMenu = () => setOpen(false);
     const [selectedPrep, setSelectedPrep] = useState(null);
     const [selectedCook, setSelectedCook] = useState(null);
     const [selectedService,setSelectedService] = useState(null);

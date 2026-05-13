@@ -1,4 +1,4 @@
-/*import Header from "../header/header";
+import Header from "../header/header";
 import Footer from "../footer/footer";
 import { Outlet } from "react-router-dom";
 
@@ -14,4 +14,4 @@ function Layout() {
   );
 }
 
-export default Layout;*/
+export default Layout;

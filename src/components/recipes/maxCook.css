@@ -5,7 +5,7 @@
 }
 
   .maxCookDropdown{
-      @apply absolute bg-[#fff] top-[110%] left-0 z-50  rounded-[8px];
+  @apply absolute bg-[#fff] top-[110%] left-0 z-50  rounded-[8px];
     }
    
 .maxCookDropdown ul,
@@ -19,9 +19,6 @@
     @apply grid grid-cols-[13%_90%] gap-[5px] items-center border-none outline-none;
     }
 
-    .dropdownItem input[type="radio"] {
-  /* @apply accent-color-[#293241] ; */
-}
 
 .maxCookDropdown .clearBtn {
   @apply border-none;

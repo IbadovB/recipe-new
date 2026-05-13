@@ -38,13 +38,3 @@
       )}
 
 
-       /* if (!recipe) {
-    return (
-      <div>
-        <h2>Recipe not found</h2>
-        <button onClick={() => navigate("/recipes")}>
-          Back to Recipes
-        </button>
-      </div>
-    );
-  }*/
